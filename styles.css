@@ -18,7 +18,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #1f1f1f;
+  background: transparent;
+  border-bottom: 2px solid white;
 }
 
 nav .logo {
