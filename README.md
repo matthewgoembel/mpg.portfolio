@@ -1,2 +1,2 @@
-# Official Website of _*Insert itle*_ 
+# Official Website of *Insert itle* 
 # Interactive Web Application for Cybersecurity Learning
