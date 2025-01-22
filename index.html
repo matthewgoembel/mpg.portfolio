@@ -34,10 +34,13 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            transition: transform 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #00d4ff; /* Turns the text to the blue theme color */
+            text-decoration: underline; /* Underlines the link */
+            transform: translateY(-3px); /* Floats the link up */
         }
 
         .home-section {
@@ -111,7 +114,6 @@
         .buttons a:hover {
             background-color: #00aacc;
         }
-
     </style>
 </head>
 <body>
