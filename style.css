@@ -17,7 +17,6 @@ body, html {
     z-index: 0;
     pointer-events: none; /* Allow interaction with content */
     overflow: hidden; /* Prevent overflow */
-    background-color: black; /* Ensure the background fills the screen */
 }
 
 #menu {
