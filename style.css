@@ -24,8 +24,8 @@ body, html {
     margin: 50px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    border: 2px solid #00bbff;
-    color: #00bbff;
+    border: 2px solid #00FF00;
+    color: #00FF00;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
     position: relative;
     z-index: 1; /* Make sure the content stays on top of the matrix background */
@@ -40,12 +40,12 @@ header {
     font-size: 2em;
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
-    color: #00bbff; /* Green text */
+    color: #00FF00; /* Green text */
 }
 
 h2 {
     font-size: 1.5em;
-    color: #00bbff;
+    color: #00FF00;
     text-align: center;
 }
 
@@ -55,18 +55,18 @@ section {
 
 h3 {
     font-size: 1.2em;
-    color: #00bbff;
+    color: #00FF00;
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
-    color: #00bbff;
+    color: #00FF00;
 }
 
 /* Links */
 a {
-    color: #00bbff;
+    color: #00FF00;
     text-decoration: none;
 }
 
