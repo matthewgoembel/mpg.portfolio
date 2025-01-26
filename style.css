@@ -45,7 +45,7 @@ body, html {
 }
 
 #menu a:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: #ffffff; /* Change color on hover */
     transform: translateY(-3px); /* Move the link up slightly */
 }
 
@@ -67,6 +67,7 @@ body, html {
 
 /* Main content box */
 #main-content {
+    margin-top: 50px;
     position: relative;
     width: 80%;
     margin: 50px auto;
