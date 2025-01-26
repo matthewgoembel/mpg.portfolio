@@ -82,11 +82,11 @@ canvas {
 
 /* Main content box */
 #main-content {
-    margin-top: 40px;
+    margin-top: 50px;
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5)t; /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.8)t; /* Semi-transparent black */
     border: 2px dashed #00c3ff;
     color: #00c3ff;
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
