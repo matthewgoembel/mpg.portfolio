@@ -86,7 +86,7 @@ canvas {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background-color: transparent; /* Semi-transparent black */
     border: 2px dashed #00c3ff;
     color: #00c3ff;
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
