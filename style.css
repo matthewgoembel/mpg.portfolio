@@ -45,7 +45,7 @@ body, html {
 }
 
 #menu a:hover {
-    color: #ffffff; /* Change color on hover */
+    color: #FFFFFF; /* Change color on hover */
     transform: translateY(-3px); /* Move the link up slightly */
 }
 
