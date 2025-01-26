@@ -10,21 +10,24 @@ body, html {
 
 /* Matrix background */
 #matrix-background {
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    pointer-events: none; /* Allows interaction with content */
+    z-index: 0;
+    pointer-events: none; /* Allow interaction with content */
+    overflow: hidden; /* Prevent overflow */
+    background-color: black; /* Ensure the background fills the screen */
 }
 
 #menu {
-    position: absolute;
-    bottom-margin: 20px;
-    top: 10px; /* Ensure it's at the top */
-    left: 50%;  /* Add semicolon here */
-    transform: translateX(-50%);
+    position: relative; /* Ensure it stays above the background */
+    z-index: 2; /* Layer it above the matrix background */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the menu */
     text-align: center;
+    background-color: transparent; /* Let the matrix effect show behind it */
 }
 
 #menu ul {
@@ -69,16 +72,15 @@ body, html {
 /* Main content box */
 #main-content {
     margin-top: 50px;
-    position: relative;
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: transparent; /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
     border: 2px dashed #00c3ff;
     color: #00c3ff;
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
-    position: relative;
-    z-index: 1; /* Content stays on top of matrix background */
+    position: relative; /* Ensure it's above the matrix background */
+    z-index: 1;
 }
 
 /* Header */
