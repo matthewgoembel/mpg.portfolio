@@ -18,11 +18,10 @@ body, html {
     pointer-events: none; /* Allows interaction with content */
 }
 
-/* Navigation Menu */
 #menu {
     position: absolute;
     top: 10px; /* Ensure it's at the top */
-    left: 50%
+    left: 50%;  /* Add semicolon here */
     transform: translateX(-50%);
     text-align: center;
 }
@@ -36,13 +35,34 @@ body, html {
 }
 
 #menu a {
-    color: #00c3ff;
+    position: relative;
+    padding: 5px 10px;
+    display: inline-block;
     text-decoration: none;
+    color: #00c3ff;
     font-size: 1.2em;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #menu a:hover {
-    text-decoration: underline;
+    color: #ffcc00; /* Change color on hover */
+    transform: translateY(-3px); /* Move the link up slightly */
+}
+
+#menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Underline thickness */
+    background-color: #00c3ff; /* Underline color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#menu a:hover::after {
+    transform: scaleX(1); /* Make the underline appear on hover */
 }
 
 /* Main content box */
