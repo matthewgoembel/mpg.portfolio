@@ -32,11 +32,11 @@ canvas {
 }
 
 #menu {
-    position: relative; /* Ensure it stays above the background */
+    position: absolute; /* Ensure it stays above the background */
     z-index: 2; /* Layer it above the matrix background */
     top: 10px;
     left: 50%;
-    transform: translateX(-50%); /* Center the menu */
+    transform: translate(-50%, -50%); /* Offset by half its width and height */
     text-align: center;
     background-color: transparent; /* Let the matrix effect show behind it */
 }
@@ -82,11 +82,11 @@ canvas {
 
 /* Main content box */
 #main-content {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: transparent; /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5)t; /* Semi-transparent black */
     border: 2px dashed #00c3ff;
     color: #00c3ff;
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
