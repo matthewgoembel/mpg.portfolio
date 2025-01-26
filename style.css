@@ -7,6 +7,7 @@ body, html {
     font-family: monospace;
 }
 
+/* Matrix background */
 #matrix-background {
     position: fixed;
     top: 0;
@@ -14,16 +15,20 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: -1; /* To place the background behind the content */
+    pointer-events: none; /* So it doesn’t block interactions with the content */
 }
 
+/* Main content box */
 #main-content {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    border: 2px solid #00FF00;
-    color: #00FF00;
+    border: 2px solid #00bbff;
+    color: #00bbff;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+    position: relative;
+    z-index: 1; /* Make sure the content stays on top of the matrix background */
 }
 
 header {
@@ -35,12 +40,12 @@ header {
     font-size: 2em;
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
-    color: #00FF00; /* Green text */
+    color: #00bbff; /* Green text */
 }
 
 h2 {
     font-size: 1.5em;
-    color: #00FF00;
+    color: #00bbff;
     text-align: center;
 }
 
@@ -50,18 +55,18 @@ section {
 
 h3 {
     font-size: 1.2em;
-    color: #00FF00;
+    color: #00bbff;
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
-    color: #00FF00;
+    color: #00bbff;
 }
 
 /* Links */
 a {
-    color: #00FF00;
+    color: #00bbff;
     text-decoration: none;
 }
 
