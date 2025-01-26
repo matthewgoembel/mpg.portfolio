@@ -10,12 +10,10 @@ body, html {
 
 /* Matrix background */
 #matrix-background {
-    position: static;
+    position: fixed;
     top: 0;
     width: 140%;
     height: 170%;
-    background-size: cover;  /* Ensure the background covers the entire area */
-    background-position: center center;  /* Center the background image/animation */
     z-index: -1;
     pointer-events: none; /* Allows interaction with content */
 }
