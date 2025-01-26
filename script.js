@@ -1,8 +1,19 @@
 function createMatrixEffect() {
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
+
+    // Modify canvas styles for position and size
+    canvas.style.position = "fixed";  // Keeps the background fixed to the screen
+    canvas.style.top = "0";           // Start from the very top
+    canvas.style.left = "0";          // Start from the very left
+    canvas.style.width = "100%";      // Cover full width of the page
+    canvas.style.height = "100%";     // Cover full height of the page
+    canvas.style.zIndex = "-1";       // Keeps it behind other content
+
+    // Set canvas width and height
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    
     const ctx = canvas.getContext("2d");
 
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[]|:;,.<>?/\\"; 
