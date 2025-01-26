@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
+    background-color: transparent;
     font-family: monospace;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -17,6 +17,18 @@ body, html {
     z-index: 0;
     pointer-events: none; /* Allow interaction with content */
     overflow: hidden; /* Prevent overflow */
+}
+
+/* Canvas for Matrix Effect */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Place it in the background */
+    pointer-events: none; /* Allow interaction with content above it */
+    background-color: transparent; /* Ensure transparency */
 }
 
 #menu {
