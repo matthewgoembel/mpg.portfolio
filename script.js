@@ -28,7 +28,7 @@ function createMatrixEffect() {
             const y = drops[i] * fontSize;
 
             // Exclude content area from the effect
-            if (x >= 50 && x <= canvas.width - 50 && y >= 100 && y <= canvas.height - 100) {
+            if (x >= 100 && x <= canvas.width - 100 && y >= 150 && y <= canvas.height - 150) {
                 continue;
             }
 
