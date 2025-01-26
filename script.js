@@ -1,62 +1,49 @@
+// Matrix Effect Code
 function createMatrixEffect() {
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
-
-    // Modify canvas styles for position and size
-    canvas.style.position = "fixed";  // Keeps the background fixed to the screen
-    canvas.style.top = "0";           // Start from the very top
-    canvas.style.left = "0";          // Start from the very left
-    canvas.style.width = "100%";      // Cover full width of the page
-    canvas.style.height = "100%";     // Cover full height of the page
-    canvas.style.zIndex = "-1";       // Keeps it behind other content
-
-    // Set canvas width and height
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    
     const ctx = canvas.getContext("2d");
 
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[]|:;,.<>?/\\"; 
+    // Characters to simulate the Matrix Code
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[]|:;,.<>?/\\";
     const fontSize = 14;
     const columns = canvas.width / fontSize;
-    const drops = [];
+    const drops = []; // Array to store drop position
 
     // Initialize drops array
     for (let i = 0; i < columns; i++) {
         drops[i] = 1;
     }
 
+    // Matrix Loop to animate the characters
     function matrixLoop() {
         ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(0, 0, canvas.width, canvas.height); // Fade effect for each frame
 
-        ctx.fillStyle = "#00c3ff"; // Sky Blue
-        ctx.font = fontSize + "px monospace";
+        ctx.fillStyle = "#00FF00"; // Green color
+        ctx.font = fontSize + "px monospace"; // Monospace font for terminal effect
 
+        // Loop through drops to simulate falling characters
         for (let i = 0; i < drops.length; i++) {
             const char = characters[Math.floor(Math.random() * characters.length)];
-            const x = i * fontSize;
-            const y = drops[i] * fontSize;
+            ctx.fillText(char, i * fontSize, drops[i] * fontSize);
 
-            // Exclude content area from the effect
-            if (x >= 100 && x <= canvas.width - 100 && y >= 150 && y <= canvas.height - 150) {
-                continue;
-            }
-
-            ctx.fillText(char, x, y);
-
-            if (y > canvas.height && Math.random() > 0.975) {
+            // Reset the drop when it reaches the bottom and randomly start it again
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
                 drops[i] = 0;
             }
 
             drops[i]++;
         }
 
+        // Continue the animation
         requestAnimationFrame(matrixLoop);
     }
 
-    matrixLoop();
+    matrixLoop(); // Start the Matrix effect
 }
 
-// Start the matrix effect
+// Create the Matrix Effect
 createMatrixEffect();
