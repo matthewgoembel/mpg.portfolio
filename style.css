@@ -34,7 +34,7 @@ canvas {
 #menu {
     position: absolute; /* Ensure it stays above the background */
     z-index: 2; /* Layer it above the matrix background */
-    top: 10px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%); /* Offset by half its width and height */
     text-align: center;
