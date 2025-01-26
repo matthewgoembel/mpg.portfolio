@@ -14,8 +14,36 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    pointer-events: none;
+    z-index: -1; /* To place the background behind the content */
+    pointer-events: none; /* So it doesn’t block interactions with the content */
+}
+
+/* Navigation Menu */
+#menu {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#menu a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#menu a:hover {
+    text-decoration: underline;
 }
 
 /* Main content box */
@@ -23,14 +51,15 @@ body, html {
     width: 80%;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid #00BFFF; /* Light Sky Blue */
-    color: #00BFFF;
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border: 2px solid #00FF00;
+    color: #00FF00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Make sure the content stays on top of the matrix background */
 }
 
+/* Header */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -39,34 +68,14 @@ header {
 #ascii-name {
     font-size: 2em;
     line-height: 1.2;
-    white-space: pre-wrap;
-    color: #00BFFF;
+    white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
+    color: #00FF00; /* Green text */
 }
 
 h2 {
     font-size: 1.5em;
-    color: #00BFFF;
+    color: #00FF00;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #00BFFF;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 section {
@@ -75,18 +84,18 @@ section {
 
 h3 {
     font-size: 1.2em;
-    color: #00BFFF;
+    color: #00FF00;
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
-    color: #00BFFF;
+    color: #00FF00;
 }
 
 /* Links */
 a {
-    color: #00BFFF;
+    color: #00FF00;
     text-decoration: none;
 }
 
