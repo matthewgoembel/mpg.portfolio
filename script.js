@@ -22,7 +22,7 @@ function createMatrixEffect() {
         ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
         ctx.fillRect(0, 0, canvas.width, canvas.height); // Fade effect for each frame
 
-        ctx.fillStyle = "#00FF00"; // Green color
+        ctx.fillStyle = "#00c3ff"; // Green color
         ctx.font = fontSize + "px monospace"; // Monospace font for terminal effect
 
         // Loop through drops to simulate falling characters
