@@ -35,7 +35,7 @@ function createMatrixEffect() {
                 drops[i] = 0;
             }
 
-            drops[i]++;
+            drops[i] += 0.75;
         }
 
         // Continue the animation
