@@ -1,35 +1,49 @@
-const canvas = document.getElementById('matrix');
-const ctx = canvas.getContext('2d');
+// Matrix Effect Code
+function createMatrixEffect() {
+    const canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const ctx = canvas.getContext("2d");
 
-// Set canvas size to match the window size
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
+    // Characters to simulate the Matrix Code
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-={}[]|:;,.<>?/\\";
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = []; // Array to store drop position
 
-const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()*&^%+-/';
-const fontSize = 16;
-const columns = canvas.width / fontSize;
-const drops = Array(columns).fill(0);
+    // Initialize drops array
+    for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+    }
 
-function drawMatrix() {
-    // Fade effect
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // Matrix Loop to animate the characters
+    function matrixLoop() {
+        ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height); // Fade effect for each frame
 
-    ctx.fillStyle = '#00FF00'; // Matrix green color
-    ctx.font = fontSize + 'px Courier New';
+        ctx.fillStyle = "#00FF00"; // Green color
+        ctx.font = fontSize + "px monospace"; // Monospace font for terminal effect
 
-    for (let i = 0; i < drops.length; i++) {
-        const text = characters[Math.floor(Math.random() * characters.length)];
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        // Loop through drops to simulate falling characters
+        for (let i = 0; i < drops.length; i++) {
+            const char = characters[Math.floor(Math.random() * characters.length)];
+            ctx.fillText(char, i * fontSize, drops[i] * fontSize);
 
-        // Reset drop to the top randomly
-        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-            drops[i] = 0;
+            // Reset the drop when it reaches the bottom and randomly start it again
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+
+            drops[i]++;
         }
 
-        drops[i]++;
+        // Continue the animation
+        requestAnimationFrame(matrixLoop);
     }
+
+    matrixLoop(); // Start the Matrix effect
 }
 
-// Call the function every 33ms to create the effect
-setInterval(drawMatrix, 33);
+// Create the Matrix Effect
+createMatrixEffect();
