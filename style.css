@@ -11,7 +11,7 @@ body, html {
 /* Matrix background */
 #matrix-background {
     position: fixed;
-    top: 10px; /* Adjusted to start just below the menu bar */
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -25,7 +25,6 @@ body, html {
     top: 10px; /* Ensure it's at the top */
     left: 50%
     transform: translateX(-50%);
-    z-index: 1;
     text-align: center;
 }
 
@@ -50,8 +49,7 @@ body, html {
 /* Main content box */
 #main-content {
     width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 50px auto;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
     border: 2px solid #00FF00;
     color: #00FF00;
@@ -63,7 +61,7 @@ body, html {
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 #ascii-name {
