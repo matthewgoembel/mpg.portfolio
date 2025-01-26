@@ -32,7 +32,7 @@ function createMatrixEffect() {
             const x = i * fontSize;
             const y = drops[i] * fontSize;
 
-            // Check if the current drop is inside the main content area and skip it
+            // Exclude content area from the effect
             if (x >= 50 && x <= canvas.width - 50 && y >= 100 && y <= canvas.height - 100) {
                 continue; // Don't render characters in the middle content box
             }
