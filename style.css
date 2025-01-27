@@ -39,7 +39,7 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%); /* Offset by half its width and height */
     text-align: center;
-    background-color: transparent; /* Let the matrix effect show behind it */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
 }
 
 #menu ul {
