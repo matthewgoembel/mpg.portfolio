@@ -38,7 +38,8 @@ canvas {
     left: 50%;
     transform: translate(-50%, -50%); /* Offset by half its width and height */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    background-color: transparent; /* transparent*/
+    margin-bottom: 60px; /* Space below the menu */
 }
 
 #menu ul {
@@ -84,9 +85,9 @@ canvas {
 
 /* Main content box */
 #main-content {
-    margin-top: 60px;
+    margin-top: 120px;
     width: 80%;
-    margin: 50px auto;
+    margin: 120px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     border: 2px dashed #00c3ff;
