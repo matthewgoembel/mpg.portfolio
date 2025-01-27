@@ -42,7 +42,7 @@ canvas {
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     border: 2px dashed #00c3ff; /* Dashed border to match the main body */
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6); /* Add a glowing effect */
-    padding: 10px 0; /* Add padding for spacing around menu items */
+    padding: 20px 0; /* Add padding for spacing around menu items */
     text-align: center; /* Center the menu items horizontally */
 }
 
