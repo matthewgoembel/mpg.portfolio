@@ -123,6 +123,26 @@ h3 {
     text-align: center;
 }
 
+#social-links {
+    text-align: center; /* Center the content horizontally */
+    margin: 20px auto; /* Center the section vertically and add spacing */
+    position: relative;
+    z-index: 1; /* Ensure it's above the background */
+}
+
+#social-links a {
+    margin: 0 10px; /* Add spacing between the links */
+    color: #00c3ff; /* Match the theme color */
+    font-size: 1.2em; /* Make the links slightly larger */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#social-links a:hover {
+    color: #FFFFFF; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
