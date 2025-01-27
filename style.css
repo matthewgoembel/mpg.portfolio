@@ -152,21 +152,6 @@ h2 {
     text-align: center;
 }
 
-section {
-    margin-bottom: 20px;
-    text-align: center; /* Center-align the content in the section */
-    display: flex; /* Use flexbox to align child elements */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Vertically center-align the content */
-    align-items: center; /* Horizontally center-align the content */
-}
-
-section p, section div {
-    text-align: center; /* Ensure any paragraph or div text is also centered */
-    max-width: 80%; /* Optional: Limit the width of text for better readability */
-    margin: 0 auto; /* Center the text container */
-}
-
 h3 {
     font-size: 1.2em;
     color: #00c3ff;
