@@ -39,7 +39,7 @@ canvas {
     transform: translate(-50%, -50%); /* Offset by half its width and height */
     text-align: center;
     background-color: transparent; /* transparent*/
-    margin-bottom: 60px; /* Space below the menu */
+    margin-bottom: 30px; /* Space below the menu */
 }
 
 #menu ul {
