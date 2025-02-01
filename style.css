@@ -170,7 +170,7 @@ header {
 
 #projects-list a {
     display: inline-block; /* Makes sure the hover effect applies properly */
-    font-size: 1.2em;
+    font-size: 1em;
     color: #00c3ff;
     text-decoration: underline;
     transition: transform 0.3s ease, color 0.3s ease;
