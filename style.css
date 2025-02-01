@@ -144,9 +144,8 @@ header {
     padding: 20px;
 }
 
-/* Responsive ASCII Art */
 #ascii-name {
-    font-size: 3vw; /* Responsive font size based on viewport width */
+    font-size: 2em;
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
     color: #00c3ff; /* Green text */
