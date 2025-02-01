@@ -144,23 +144,37 @@ header {
     padding: 20px;
 }
 
+/* Responsive ASCII Art */
 #ascii-name {
-    font-size: 2em;
+    font-size: 4vw; /* Responsive font size based on viewport width */
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
     color: #00c3ff; /* Green text */
+    overflow: hidden; /* Prevent overflow */
+    word-wrap: break-word; /* Ensure long lines wrap */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    #ascii-name {
+        font-size: 6vw; /* Increase font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #ascii-name {
+        font-size: 8vw; /* Further increase font size for very small screens */
+    }
 }
 
 h2 {
     font-size: 1.5em;
     color: #00c3ff;
-
 }
 
 h3 {
     font-size: 1.2em;
     color: #00c3ff;
-   
 }
 
 footer {
