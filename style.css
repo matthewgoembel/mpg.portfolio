@@ -167,6 +167,36 @@ header {
     }
 }
 
+/* Project Links */
+#projects-list {
+    margin: 20px 0;
+    padding: 0;
+}
+
+#projects-list ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    text-align: left; /* Ensure left justification */
+}
+
+#projects-list li {
+    margin-bottom: 10px; /* Space out links */
+}
+
+#projects-list a {
+    display: inline-block; /* Makes sure the hover effect applies properly */
+    font-size: 1.2em;
+    color: #00c3ff;
+    text-decoration: underline;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#projects-list a:hover {
+    color: #FFFFFF; /* Change color on hover */
+    transform: translateY(-3px); /* Move the link up slightly */
+}
+
+
 h2 {
     font-size: 1.5em;
     color: #00c3ff;
