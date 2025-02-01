@@ -146,25 +146,10 @@ header {
 
 /* Responsive ASCII Art */
 #ascii-name {
-    font-size: 4vw; /* Responsive font size based on viewport width */
+    font-size: 3vw; /* Responsive font size based on viewport width */
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
     color: #00c3ff; /* Green text */
-    overflow: hidden; /* Prevent overflow */
-    word-wrap: break-word; /* Ensure long lines wrap */
-}
-
-/* Adjust font size for smaller screens */
-@media (max-width: 768px) {
-    #ascii-name {
-        font-size: 1vw; /* Decrease font size for tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    #ascii-name {
-        font-size: 1vw; /* Further decrease font size for mobile screens */
-    }
 }
 
 /* Project Links */
