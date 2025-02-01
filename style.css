@@ -157,13 +157,13 @@ header {
 /* Adjust font size for smaller screens */
 @media (max-width: 768px) {
     #ascii-name {
-        font-size: 4vw; /* Decrease font size for tablets */
+        font-size: 1vw; /* Decrease font size for tablets */
     }
 }
 
 @media (max-width: 480px) {
     #ascii-name {
-        font-size: 3vw; /* Further decrease font size for mobile screens */
+        font-size: 1vw; /* Further decrease font size for mobile screens */
     }
 }
 
