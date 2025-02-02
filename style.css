@@ -44,6 +44,7 @@ canvas {
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6); /* Add a glowing effect */
     padding: 10px 0; /* Add padding for spacing around menu items */
     text-align: center; /* Center the menu items horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 /* Menu List */
@@ -100,6 +101,7 @@ canvas {
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
     position: relative; /* Ensure it's above the matrix background */
     z-index: 1;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
 #social-links {
