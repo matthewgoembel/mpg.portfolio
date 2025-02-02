@@ -65,7 +65,7 @@ canvas {
     display: inline-block;
     text-decoration: none;
     color: #00c3ff;
-    font-size: 1.3vw; /* Scale font size based on screen width */
+    font-size: 1.1vw; /* Scale font size based on screen width */
     transition: transform 0.3s ease, color 0.3s ease;
     flex-shrink: 1; /* Allow shrinking to fit */
     white-space: nowrap; /* Prevent text from wrapping */
