@@ -145,25 +145,10 @@ header {
 }
 
 #ascii-name {
-    font-family: monospace; /* Ensure monospace font for ASCII art */
-    font-size: 2vw; /* Responsive font size */
+    font-size: 2em;
     line-height: 1.2;
     white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
     color: #00c3ff; /* Green text */
-    text-align: center; /* Center the ASCII art */
-}
-
-/* Media Queries for ASCII Art */
-@media (max-width: 768px) {
-    #ascii-name {
-        font-size: 3vw; /* Larger font size for smaller screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #ascii-name {
-        font-size: 1.5vw; /* Smaller font size for larger screens */
-    }
 }
 
 /* Project Links */
@@ -194,6 +179,7 @@ header {
     color: #FFFFFF; /* Change color on hover */
     transform: translateY(-3px); /* Move the link up slightly */
 }
+
 
 h2 {
     font-size: 1.5em;
