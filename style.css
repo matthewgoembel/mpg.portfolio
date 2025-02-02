@@ -159,6 +159,13 @@ header {
     margin: 0 auto; /* Center the block horizontally */
     display: block; /* Ensure it behaves as a block element */
     max-width: 100%; /* Prevent it from exceeding the container width */
+    animation: asciiColorChange 3s infinite alternate ease-in-out;
+}
+
+@keyframes asciiColorChange {
+    0% { color: #00c3ff; }
+    50% { color: #ffffff; }
+    100% { color: #00c3ff; }
 }
 
 /* Project Links */
