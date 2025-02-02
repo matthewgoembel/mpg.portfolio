@@ -144,11 +144,18 @@ header {
     padding: 20px;
 }
 
+/* ASCII Art Container */
 #ascii-name {
-    font-size: 2em;
-    line-height: 1.2;
-    white-space: pre-wrap; /* Preserve spaces and new lines for ASCII Art */
-    color: #00c3ff; /* Green text */
+    font-family: monospace; /* Ensure monospace font */
+    font-size: 2vw; /* Responsive font size based on viewport width */
+    line-height: 1.2; /* Maintain line spacing */
+    white-space: pre; /* Preserve spaces and line breaks */
+    color: #00c3ff; /* Match the theme color */
+    text-align: center; /* Center the ASCII art */
+    overflow: hidden; /* Prevent overflow */
+    margin: 0 auto; /* Center the block horizontally */
+    display: block; /* Ensure it behaves as a block element */
+    max-width: 100%; /* Prevent it from exceeding the container width */
 }
 
 /* Project Links */
