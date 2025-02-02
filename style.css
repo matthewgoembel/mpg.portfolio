@@ -6,6 +6,7 @@ body, html {
     background-color: transparent;
     font-family: monospace;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: #FFFFFF; /* Set text color to white */
 }
 
 /* Matrix background */
@@ -97,7 +98,7 @@ canvas {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     border: 2px dashed #00c3ff;
-    color: #00c3ff;
+    color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
     position: relative; /* Ensure it's above the matrix background */
     z-index: 1;
@@ -179,13 +180,13 @@ header {
 #projects-list a {
     display: inline-block; /* Makes sure the hover effect applies properly */
     font-size: 1em;
-    color: #00c3ff;
+    color: #FFFFFF;
     text-decoration: underline;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 #projects-list a:hover {
-    color: #FFFFFF; /* Change color on hover */
+    color: #00c3ff; /* Change color on hover */
     transform: translateY(-3px); /* Move the link up slightly */
 }
 
