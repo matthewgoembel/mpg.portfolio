@@ -55,7 +55,7 @@ canvas {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Spacing between menu items */
+    gap: 20px; /* Keep spacing */
 }
 
 /* Menu Links */
@@ -65,8 +65,10 @@ canvas {
     display: inline-block;
     text-decoration: none;
     color: #00c3ff;
-    font-size: 1.3em;
+    font-size: 1.3vw; /* Scale font size based on screen width */
     transition: transform 0.3s ease, color 0.3s ease;
+    flex-shrink: 1; /* Allow shrinking to fit */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 #menu a:hover {
@@ -88,6 +90,18 @@ canvas {
 
 #menu a:hover::after {
     transform: scaleX(1); /* Make the underline appear on hover */
+}
+
+/* Responsive Scaling */
+@media screen and (max-width: 600px) {
+    #menu {
+        width: 95%; /* Slightly wider for small screens */
+    }
+
+    #menu a {
+        font-size: 3vw; /* Scale text down as needed */
+        padding: 3px 6px; /* Adjust padding to fit */
+    }
 }
 
 /* Main content box */
