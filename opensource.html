@@ -23,15 +23,8 @@
     <!-- Main Content Box -->
         <div id="main-content"> <!-- Terminal box -->
         <header>
-            <pre id="ascii-name">
-       ___  ____  _____ _   _      ____   ___  _   _ ____   ____ _____ 
-      / _ \|  _ \| ____| \ | |    / ___| / _ \| | | |  _ \ / ___| ____|
-     | | | | |_) |  _| |  \| |____\___ \| | | | | | | |_) | |   |  _|  
-     | |_| |  __/| |___| |\  |_____|__) | |_| | |_| |  _ <| |___| |___ 
-      \___/|_|   |_____|_| \_|    |____/ \___/ \___/|_| \_\\____|_____|
-                                                                   
-                                                 
-            </pre> <!-- ASCII Art Name -->
+            <!-- Placeholder for ASCII Art -->
+            <pre id="ascii-name">Loading ASCII art...</pre>
         </header>
         
         <section id="about">
@@ -55,6 +48,17 @@
             <p>&copy; 2025 MPG</p>
         </footer>
 
+    <script>
+        fetch('assets/ascii-open-source.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('ascii-name').textContent = data;
+            })
+            .catch(error => {
+                console.error('Error loading ASCII art:', error);
+            });
+    </script>
+            
     <script src="script.js"></script>
 </body>
 </html>
