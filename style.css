@@ -214,6 +214,36 @@ header {
 
 
 
+#skills-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100px;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ccc;
+}
+
+
 h2 {
     padding: 20px;
     font-size: 1.5em;
