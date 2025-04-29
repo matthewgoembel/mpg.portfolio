@@ -279,7 +279,7 @@ a:hover {
 }
 
 /* ===== Project Cards for Projects Page ===== */
-#projects-list {
+.projects-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
