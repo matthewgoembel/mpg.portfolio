@@ -336,3 +336,14 @@ a:hover {
     background-color: #00cc00;
     transform: translateY(-2px);
 }
+
+.project-card h2,
+.project-card h4 {
+    padding: 0; /* Remove the default 20px padding inside project cards */
+    margin: 0 0 10px 0; /* Small bottom margin for spacing */
+}
+
+.project-card p {
+    margin: 0 0 10px 0; /* Small consistent margin under paragraphs */
+}
+
