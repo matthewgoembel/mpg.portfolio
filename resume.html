@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>References - Matthew Goembel</title>
+    <title>Resume - Matthew Goembel</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .resume-profile {
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .resume-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .resume-profile .details {
+            color: #ffffff;
+        }
+        .reference-block {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-left: 3px solid #0f0;
+            padding-left: 20px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <!-- Matrix Background -->
@@ -22,66 +49,57 @@
 
     <!-- Main Content Box -->
     <div id="main-content">
-        
-        <!-- New: Profile Section -->
-        <section id="profile">
-            <img src="assets/pfp.jpg" alt="Matthew Goembel Profile Picture" id="profile-pic">
-            <div id="profile-info">
-                <h2>Matthew Goembel</h2>
-                <p>Software Engineering Student | UI/UX &amp; Full-Stack Developer</p>
-                <p>Email: mgoembel1@gmail.com  &nbsp;|&nbsp; Phone: (919) 740-0631</p>
-            </div>
-        </section>
-
-        <!-- ASCII Art Header -->
         <header>
             <pre id="ascii-name">Loading ASCII art...</pre>
         </header>
 
-        <!-- About / Intro Section (unchanged) -->
+        <section class="resume-profile">
+            <img src="pfp.jpg" alt="Matthew Goembel">
+            <div class="details">
+                <h2>Matthew Goembel</h2>
+                <p>Software Engineering Student at Florida Institute of Technology</p>
+                <p>Expected Graduation: May 2025</p>
+                <p>Email: mgoembel1@gmail.com</p>
+                <p>Phone: (919) 740-0631</p>
+                <p>Focus: UX/UI, Game Development, Full-Stack Engineering</p>
+            </div>
+        </section>
+
         <section id="about">
             <h1>References and Resume</h1>
             <p> ----------------------------------</p>
             <p>The references listed below are all amazing and inspiring individuals I got a chance to talk to or work with.</p>
-            <p style="margin-bottom: 20px;">
-                Every conversation I had with them became a piece of wisdom that I carried with me, 
-                and why I am confident to list any of these great people as a reference.
-            </p>
+            <p style="margin-bottom: 20px;">Every conversation I had with them became a piece of wisdom that I carried with me, and why I am confident to list any of these great people as a reference.</p>
         </section>
 
-        <!-- Cleanly Organized References -->
-        <section id="references">
-            <h2>References</h2>
-            <ul class="references-list">
-                <li><strong>Tracy Rankin</strong> – Vice-President, OpenShift at RedHat<br>
-                    trankin@redhat.com | (919) 274-2442
-                </li>
-                <li><strong>Nancy Potanovic</strong> – Principal Consultant at RedHat<br>
-                    npotanov@redhat.com | (919) 345-6820
-                </li>
-                <li><strong>Kevin Smith</strong> – General Counsel at JAGGAER<br>
-                    doubleenvelopment@gmail.com | (571) 213-078
-                </li>
-                <li><strong>Gail Lewis</strong> – Lochmere Neighborhood Director<br>
-                    gail@lochmere.org
-                </li>
-                <li><strong>Dina Goembel</strong> – CEO, Carolina Cabinet Specialist<br>
-                    info@carolinacabinetspecialist.com | (919) 803-5825
-                </li>
-                <li><strong>Jay Madison</strong> – VP, Information Security &amp; Compliance at RedHat<br>
-                    madisonj@redhat.com
+        <div class="reference-block">
+            <p><strong>Tracy Rankin</strong> - Vice-President, Open-Shift at RedHat: trankin@redhat.com, (919) 274-2442</p>
+        </div>
+        <div class="reference-block">
+            <p><strong>Nancy Potanovic</strong> - Principle Consultant at RedHat: npotanov@redhat.com, (919) 345-6820</p>
+        </div>
+        <div class="reference-block">
+            <p><strong>Kevin Smith</strong> - General Counsel at JAGGAER: doubleenvelopment@gmail.com, (571) 213-078</p>
+        </div>
+        <div class="reference-block">
+            <p><strong>Gail Lewis</strong> - Lochmere Neighborhood Director: gail@lochmere.org</p>
+        </div>
+        <div class="reference-block">
+            <p><strong>Dina Goembel</strong> - CEO Carolina Cabinet Specialist: ​info@carolinacabinetspecialist.com, (919) 803-5825</p>
+        </div>
+        <div class="reference-block">
+            <p><strong>Jay Madison</strong> - Vice President, Information Security & Compliance at RedHat: madisonj@redhat.com</p>
+        </div>
+
+        <section id="projects-list">
+            <ul>
+                <li>
+                    <a href="assets/resume.pdf" target="_blank">Resume</a>
+                    <a href="assets/resume.pdf" download class="download-btn">Download PDF📄</a>
                 </li>
             </ul>
         </section>
 
-        <!-- Resume Links -->
-        <section id="resumes">
-            <h2>My Resume</h2>
-            <a href="assets/resume.pdf" target="_blank" class="view-btn">View Resume</a>
-            <a href="assets/resume.pdf" download class="download-btn">Download PDF📄</a>
-        </section>
-
-        <!-- Social / Contact Links (unchanged) -->
         <section id="social-links">
             <a href="https://linktr.ee/matthewgoembel" target="_blank">Linktree</a>
             <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
@@ -103,6 +121,8 @@
                 console.error('Error loading ASCII art:', error);
             });
     </script>
+
+    <script src="script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
