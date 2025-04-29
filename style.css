@@ -287,6 +287,7 @@ a:hover {
 }
 
 .project-card {
+    margin-bottom: 10px; /* 🔥 ADD THIS LINE */
     background-color: rgba(0, 0, 0, 0.85);
     padding: 1.5rem;
     border-radius: 10px;
@@ -294,7 +295,7 @@ a:hover {
     box-shadow: 0 0 15px rgba(0, 195, 255, 0.4);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px; /* 🔥 ADD THIS LINE */
+    margin-bottom: 10px; /* 🔥 ADD THIS LINE */
 }
 
 .project-card:hover {
