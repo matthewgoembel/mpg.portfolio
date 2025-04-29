@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Matthew Goembel</title>
+    <title>References - Matthew Goembel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,45 +21,76 @@
     </div>
 
     <!-- Main Content Box -->
-        <div id="main-content"> <!-- Terminal box -->
+    <div id="main-content">
+        
+        <!-- New: Profile Section -->
+        <section id="profile">
+            <img src="assets/pfp.jpg" alt="Matthew Goembel Profile Picture" id="profile-pic">
+            <div id="profile-info">
+                <h2>Matthew Goembel</h2>
+                <p>Software Engineering Student | Cybersecurity &amp; Full-Stack Developer</p>
+                <p>Email: matthew@example.com  &nbsp;|&nbsp; Phone: (123) 456-7890</p>
+            </div>
+        </section>
+
+        <!-- ASCII Art Header -->
         <header>
-            <!-- Placeholder for ASCII Art -->
             <pre id="ascii-name">Loading ASCII art...</pre>
         </header>
-        
+
+        <!-- About / Intro Section (unchanged) -->
         <section id="about">
             <h1>References and Resume</h1>
             <p> ----------------------------------</p>
             <p>The references listed below are all amazing and inspiring individuals I got a chance to talk to or work with.</p>
-            <p style="margin-bottom: 20px;">Every conversation I had with them became a piece of wisdom that I carried with me, and why I am confident to list any of these great people as a reference.</p>
+            <p style="margin-bottom: 20px;">
+                Every conversation I had with them became a piece of wisdom that I carried with me, 
+                and why I am confident to list any of these great people as a reference.
+            </p>
         </section>
 
-        </section>
-            <p> <strong>Tracy Rankin</strong> - Vice-President, Open-Shift at RedHat: trankin@redhat.com, (919) 274-2442</p>
-            <p> <strong>Nancy Potanovic</strong> - Principle Consultant at RedHat: npotanov@redhat.com, (919) 345-6820</p>
-            <p> <strong>Kevin Smith</strong> - General Counsel at JAGGAER: doubleenvelopment@gmail.com, (571) 213-078</p>
-            <p> <strong>Gail Lewis</strong> - Lochmere Neighborhood Director: gail@lochmere.org</p>
-            <p> <strong>Dina Goembel</strong> - CEO Carolina Cabinet Specialist: ​info@carolinacabinetspecialist.com, (919) 803-5825</p>
-            <p> <strong>Jay Madison</strong> - Vice President, Information Security & Compliance at RedHat: madisonj@redhat.com</p>
-
-            <section id="projects-list">
-            <ul>
-                <li>
-                <a href="assets/resume.pdf" target="_blank">Resume</a>
-                <a href="assets/resume.pdf" download class="download-btn">Download PDF📄</a>
+        <!-- Cleanly Organized References -->
+        <section id="references">
+            <h2>References</h2>
+            <ul class="references-list">
+                <li><strong>Tracy Rankin</strong> – Vice-President, OpenShift at RedHat<br>
+                    trankin@redhat.com | (919) 274-2442
                 </li>
-             </ul>
+                <li><strong>Nancy Potanovic</strong> – Principal Consultant at RedHat<br>
+                    npotanov@redhat.com | (919) 345-6820
+                </li>
+                <li><strong>Kevin Smith</strong> – General Counsel at JAGGAER<br>
+                    doubleenvelopment@gmail.com | (571) 213-078
+                </li>
+                <li><strong>Gail Lewis</strong> – Lochmere Neighborhood Director<br>
+                    gail@lochmere.org
+                </li>
+                <li><strong>Dina Goembel</strong> – CEO, Carolina Cabinet Specialist<br>
+                    info@carolinacabinetspecialist.com | (919) 803-5825
+                </li>
+                <li><strong>Jay Madison</strong> – VP, Information Security &amp; Compliance at RedHat<br>
+                    madisonj@redhat.com
+                </li>
+            </ul>
         </section>
 
+        <!-- Resume Links -->
+        <section id="resumes">
+            <h2>My Resume</h2>
+            <a href="assets/resume.pdf" target="_blank" class="view-btn">View Resume</a>
+            <a href="assets/resume.pdf" download class="download-btn">Download PDF📄</a>
+        </section>
+
+        <!-- Social / Contact Links (unchanged) -->
         <section id="social-links">
             <a href="https://linktr.ee/matthewgoembel" target="_blank">Linktree</a>
             <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
             <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
         </section>
+
         <footer>
             <p>&copy; 2025 MPG</p>
         </footer>
-
     </div>
 
     <script>
@@ -72,9 +103,6 @@
                 console.error('Error loading ASCII art:', error);
             });
     </script>
-
-    <script src="script.js"></script>
-
     <script src="script.js"></script>
 </body>
 </html>
