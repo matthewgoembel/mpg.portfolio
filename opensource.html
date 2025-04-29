@@ -21,33 +21,47 @@
     </div>
 
     <!-- Main Content Box -->
-        <div id="main-content"> <!-- Terminal box -->
+    <div id="main-content"> <!-- Terminal box -->
         <header>
-            <!-- Placeholder for ASCII Art -->
             <pre id="ascii-name">Loading ASCII art...</pre>
         </header>
-        
+
         <section id="about">
             <h1>Open-Source Contributions</h1>
             <p>-------------------------------------------</p>
             <p>Below are links to some open-source projects where I have made main branch contributions.</p>
-            <p>Click the link to view the repository and test the system!</p>
-        </section>
-            
-        <section id="projects-list">
-            <ul>
-                <li><a href="https://github.com/Sesu8642/FeudalTactics" target="_blank">Feudal Tactics: Strategy game</a></li>
-                <li><a href="https://github.com/CursedSpiderBoi/leetcode" target="_blank">LeetCode Library</a></li>
-             </ul>
+            <p>Click on a project panel to view the repository!</p>
         </section>
 
-        <section id="social-links">
-            <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
+        <!-- Panel Grid Section -->
+        <section id="projects-grid" class="grid-container">
+            <!-- Panel 1 -->
+            <div class="panel">
+                <h2>Feudal Tactics</h2>
+                <p>Strategy game with tile-based movement, combat systems, and AI.</p>
+                <a href="https://github.com/Sesu8642/FeudalTactics" target="_blank" class="button">View Repository</a>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="panel">
+                <h2>LeetCode Library</h2>
+                <p>Library of solved LeetCode problems organized by difficulty and topic.</p>
+                <a href="https://github.com/CursedSpiderBoi/leetcode" target="_blank" class="button">View Repository</a>
+            </div>
         </section>
+
+        <!-- Social Links -->
+        <section id="social-links">
+            <a href="https://github.com/matthewgoembel" target="_blank">My GitHub Profile</a>
+        </section>
+
         <footer>
             <p>&copy; 2025 MPG</p>
         </footer>
 
+    </div>
+
+    <!-- ASCII Loader -->
     <script>
         fetch('assets/ascii-open-source.txt')
             .then(response => response.text())
@@ -58,8 +72,7 @@
                 console.error('Error loading ASCII art:', error);
             });
     </script>
-            
+
     <script src="script.js"></script>
 </body>
 </html>
-
