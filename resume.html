@@ -5,65 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Matthew Goembel</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .reference-card {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            border: 1px solid #444;
-        }
-        .reference-card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        .reference-info {
-            color: #fff;
-        }
-        .accordion {
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            background-color: #111;
-            color: #0f0;
-            text-align: left;
-            outline: none;
-            transition: 0.4s;
-            margin-top: 10px;
-        }
-        .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: #222;
-            overflow: hidden;
-        }
-        .profile-summary {
-            display: flex;
-            align-items: center;
-            margin-top: 40px;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .profile-summary img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .profile-details {
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
+    <!-- Matrix Background -->
     <div id="matrix-background"></div>
 
+    <!-- Navigation Menu -->
     <div id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -73,98 +20,35 @@
         </ul>
     </div>
 
-    <div id="main-content">
+    <!-- Main Content Box -->
+        <div id="main-content"> <!-- Terminal box -->
         <header>
+            <!-- Placeholder for ASCII Art -->
             <pre id="ascii-name">Loading ASCII art...</pre>
         </header>
-
-        <section class="profile-summary">
-            <img src="pfp.png" alt="Matthew Goembel">
-            <div class="profile-details">
-                <h2>Matthew Goembel</h2>
-                <p>Software Engineering Student</p>
-                <p>Florida Institute of Technology</p>
-                <p>Expected Graduation: May 2025</p>
-                <p>Email: matthew.goembel@example.com</p>
-                <p>Phone: (XXX) XXX-XXXX</p>
-                <p>Specialties: Cybersecurity, Game Dev, Full-Stack Engineering</p>
-            </div>
-        </section>
-
+        
         <section id="about">
             <h1>References and Resume</h1>
-            <p>----------------------------------</p>
+            <p> ----------------------------------</p>
             <p>The references listed below are all amazing and inspiring individuals I got a chance to talk to or work with.</p>
             <p style="margin-bottom: 20px;">Every conversation I had with them became a piece of wisdom that I carried with me, and why I am confident to list any of these great people as a reference.</p>
         </section>
 
-        <section id="references">
-            <button class="accordion">Tracy Rankin</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Tracy Rankin">
-                <div class="reference-info">
-                    <p><strong>Tracy Rankin</strong> - Vice-President, Open-Shift at RedHat</p>
-                    <p>Email: trankin@redhat.com</p>
-                    <p>Phone: (919) 274-2442</p>
-                </div>
-            </div>
-
-            <button class="accordion">Nancy Potanovic</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Nancy Potanovic">
-                <div class="reference-info">
-                    <p><strong>Nancy Potanovic</strong> - Principle Consultant at RedHat</p>
-                    <p>Email: npotanov@redhat.com</p>
-                    <p>Phone: (919) 345-6820</p>
-                </div>
-            </div>
-
-            <button class="accordion">Kevin Smith</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Kevin Smith">
-                <div class="reference-info">
-                    <p><strong>Kevin Smith</strong> - General Counsel at JAGGAER</p>
-                    <p>Email: doubleenvelopment@gmail.com</p>
-                    <p>Phone: (571) 213-078</p>
-                </div>
-            </div>
-
-            <button class="accordion">Gail Lewis</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Gail Lewis">
-                <div class="reference-info">
-                    <p><strong>Gail Lewis</strong> - Lochmere Neighborhood Director</p>
-                    <p>Email: gail@lochmere.org</p>
-                </div>
-            </div>
-
-            <button class="accordion">Dina Goembel</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Dina Goembel">
-                <div class="reference-info">
-                    <p><strong>Dina Goembel</strong> - CEO Carolina Cabinet Specialist</p>
-                    <p>Email: info@carolinacabinetspecialist.com</p>
-                    <p>Phone: (919) 803-5825</p>
-                </div>
-            </div>
-
-            <button class="accordion">Jay Madison</button>
-            <div class="panel reference-card">
-                <img src="pfp.png" alt="Jay Madison">
-                <div class="reference-info">
-                    <p><strong>Jay Madison</strong> - Vice President, Information Security & Compliance at RedHat</p>
-                    <p>Email: madisonj@redhat.com</p>
-                </div>
-            </div>
         </section>
+            <p> <strong>Tracy Rankin</strong> - Vice-President, Open-Shift at RedHat: trankin@redhat.com, (919) 274-2442</p>
+            <p> <strong>Nancy Potanovic</strong> - Principle Consultant at RedHat: npotanov@redhat.com, (919) 345-6820</p>
+            <p> <strong>Kevin Smith</strong> - General Counsel at JAGGAER: doubleenvelopment@gmail.com, (571) 213-078</p>
+            <p> <strong>Gail Lewis</strong> - Lochmere Neighborhood Director: gail@lochmere.org</p>
+            <p> <strong>Dina Goembel</strong> - CEO Carolina Cabinet Specialist: ​info@carolinacabinetspecialist.com, (919) 803-5825</p>
+            <p> <strong>Jay Madison</strong> - Vice President, Information Security & Compliance at RedHat: madisonj@redhat.com</p>
 
-        <section id="projects-list">
+            <section id="projects-list">
             <ul>
                 <li>
-                    <a href="assets/resume.pdf" target="_blank">View Resume</a>
-                    <a href="assets/resume.pdf" download class="download-btn">Download PDF 📄</a>
+                <a href="assets/resume.pdf" target="_blank">Resume</a>
+                <a href="assets/resume.pdf" download class="download-btn">Download PDF📄</a>
                 </li>
-            </ul>
+             </ul>
         </section>
 
         <section id="social-links">
@@ -172,10 +56,10 @@
             <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
             <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
         </section>
-
         <footer>
             <p>&copy; 2025 MPG</p>
         </footer>
+
     </div>
 
     <script>
@@ -183,16 +67,14 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('ascii-name').textContent = data;
+            })
+            .catch(error => {
+                console.error('Error loading ASCII art:', error);
             });
-
-        const acc = document.getElementsByClassName("accordion");
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                panel.style.display = panel.style.display === "block" ? "none" : "block";
-            });
-        }
     </script>
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
