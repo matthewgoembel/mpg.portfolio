@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Matthew Goembel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .work-section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            color: white;
+        }
+        .work-entry {
+            margin-bottom: 20px;
+        }
+        .work-entry h3 {
+            margin: 0;
+            color: #0f0;
+        }
+        .work-entry a {
+            color: #00f;
+            text-decoration: underline;
+        }
+        .work-entry img, .work-entry video {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div id="matrix-background"></div>
+
+    <!-- Navigation Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="opensource.html">OpenSource</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="resume.html">References</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Box -->
+    <div id="main-content">
+        <header>
+            <pre id="ascii-name">Loading ASCII art...</pre>
+        </header>
+
+        <section class="resume-profile">
+            <img src="assets/pfp.jpg" alt="Matthew Goembel">
+            <div class="details">
+                <h2>Matthew Goembel</h2>
+                <p>B.S. Software Engineering - Florida Institute of Technology</p>
+                <p>Expected Graduation: Dec 2025</p>
+                <p>Email: mgoembel1@gmail.com</p>
+                <p>Phone: (919) 740-0631</p>
+                <p>Focus: UX/UI, Game Development, Full-Stack Engineering</p>
+            </div>
+        </section>
+
+        <!-- Client Work Section -->
+        <section class="work-section">
+            <h1>Client Work</h1>
+            <div class="work-entry">
+                <h3>Carolina Cabinet Specialist Website Revamp</h3>
+                <p>Modernized the company website, implemented interactive 3D tours, and improved SEO performance.</p>
+                <a href="https://carolinacabinetspecialist.com" target="_blank">Visit Site</a>
+                <img src="assets/ccs_preview.png" alt="Carolina Cabinet Specialist Screenshot">
+            </div>
+            <!-- Add more client entries here -->
+        </section>
+
+        <!-- Personal Work Section -->
+        <section class="work-section">
+            <h1>Personal Projects</h1>
+            <div class="work-entry">
+                <h3>Cool Cyber Games</h3>
+                <p>A gamified cybersecurity learning platform using Godot, React, and MongoDB. Features interactive 2.5D games teaching phishing, malware, and password safety.</p>
+                <a href="https://coolcybergames.com" target="_blank">View Project</a>
+                <img src="assets/coolcyber_preview.png" alt="Cool Cyber Games Screenshot">
+            </div>
+            <!-- Add more personal entries here -->
+        </section>
+
+        <section id="social-links">
+            <a href="https://linktr.ee/matthewgoembel" target="_blank">Linktree</a>
+            <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 MPG</p>
+        </footer>
+    </div>
+
+    <script>
+        fetch('assets/ascii-resume.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('ascii-name').textContent = data;
+            })
+            .catch(error => {
+                console.error('Error loading ASCII art:', error);
+            });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
