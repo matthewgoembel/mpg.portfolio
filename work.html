@@ -14,20 +14,47 @@
             color: white;
         }
         .work-entry {
-            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
         }
-        .work-entry h3 {
-            margin: 0;
+        .work-image {
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+        .work-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .work-content {
+            flex: 2 1 400px;
+            padding: 20px;
+        }
+        .work-content h3 {
+            margin-top: 0;
             color: #0f0;
         }
-        .work-entry a {
-            color: #00f;
-            text-decoration: underline;
-        }
-        .work-entry img, .work-entry video {
-            max-width: 100%;
+        .link-buttons {
             margin-top: 10px;
-            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+        }
+        .link-buttons a {
+            background-color: #111;
+            border: 1px solid #0f0;
+            color: #0f0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .link-buttons a:hover {
+            background-color: #0f0;
+            color: black;
         }
     </style>
 </head>
@@ -55,31 +82,59 @@
         <!-- Client Work Section -->
         <section class="work-section">
             <h1>Client Work</h1>
+
             <div class="work-entry">
-                <h3>Carolina Cabinet Specialist Website Revamp</h3>
-                <p>Modernized the company website, implemented interactive 3D tours, and improved SEO performance.</p>
-                <a href="https://carolinacabinetspecialist.com" target="_blank">Visit Site</a>
-                <img src="assets/ccs_preview.png" alt="Carolina Cabinet Specialist Screenshot">
+                <div class="work-image">
+                    <img src="assets/ccs_preview.png" alt="Carolina Cabinet Specialist Screenshot">
+                </div>
+                <div class="work-content">
+                    <h3>Carolina Cabinet Specialist Website Revamp</h3>
+                    <p>Modernized the company website, implemented interactive 3D tours, and improved SEO performance.</p>
+                    <div class="link-buttons">
+                        <a href="#">Website</a>
+                        <a href="#">X (Twitter)</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
             </div>
-            <!-- Add more client entries here -->
         </section>
 
         <!-- Personal Work Section -->
         <section class="work-section">
             <h1>Personal Work</h1>
+
             <div class="work-entry">
-                <h3>Cool Cyber Games</h3>
-                <p>A gamified cybersecurity learning platform using Godot, React, and MongoDB. Features interactive 2.5D games teaching phishing, malware, and password safety.</p>
-                <a href="https://coolcybergames.com" target="_blank">View Project</a>
-                <img src="assets/coolcyber_preview.png" alt="Cool Cyber Games Screenshot">
+                <div class="work-image">
+                    <img src="assets/coolcyber_preview.png" alt="Cool Cyber Games Screenshot">
+                </div>
+                <div class="work-content">
+                    <h3>Cool Cyber Games</h3>
+                    <p>A gamified cybersecurity learning platform using Godot, React, and MongoDB. Features interactive 2.5D games teaching phishing, malware, and password safety.</p>
+                    <div class="link-buttons">
+                        <a href="https://coolcybergames.com" target="_blank">Website</a>
+                        <a href="#">X (Twitter)</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
             </div>
+
             <div class="work-entry">
-                <h3>Hypewave AI</h3>
-                <p>Your first real AI trading partner.</p>
-                <a href="https://coolcybergames.com" target="_blank">View Project</a>
-                <img src="assets/coolcyber_preview.png" alt="Cool Cyber Games Screenshot">
+                <div class="work-image">
+                    <img src="assets/coolcyber_preview.png" alt="Hypewave AI Screenshot">
+                </div>
+                <div class="work-content">
+                    <h3>Hypewave AI</h3>
+                    <p>Your first real AI trading partner.</p>
+                    <div class="link-buttons">
+                        <a href="#">Website</a>
+                        <a href="#">X (Twitter)</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
             </div>
-            <!-- Add more personal entries here -->
         </section>
 
         <section id="social-links">
@@ -107,4 +162,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
