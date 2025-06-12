@@ -1,195 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work - Matthew Goembel</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .work-section {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 10px;
-            color: white;
-        }
-        .work-entry {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-        .work-image {
-            flex: 1 1 300px;
-            max-width: 300px;
-        }
-        .work-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .work-content {
-            flex: 2 1 400px;
-            padding: 20px;
-        }
-        .work-content h3 {
-            margin-top: 0;
-            color: #36e08e;
-        }
-        .link-buttons {
-            margin-top: 10px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .link-button {
-            width: 80px;
-            text-align: center;
-            text-decoration: none;
-            color: white;
-        }
-        .link-button img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 10px;
-            border: 2px solid #097ae3;
-            transition: transform 0.3s;
-        }
-        .link-button:hover img {
-            transform: scale(1.05);
-        }
-        .link-button span {
-            display: block;
-            margin-top: 5px;
-            font-size: 0.8em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work - Matthew Goembel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .work-section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 10px;
+      color: white;
+    }
+    .work-entry {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .work-image {
+      flex: 1 1 300px;
+      max-width: 300px;
+    }
+    .work-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .work-content {
+      flex: 2 1 400px;
+      padding: 20px;
+    }
+    .work-content h3 {
+      margin-top: 0;
+      color: #36e08e;
+    }
+
+    .link-buttons {
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .link-button {
+      width: 80px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .link-button img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #097ae3;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .link-button:hover img {
+      transform: scale(1.05);
+    }
+
+    .link-button span {
+      display: block;
+      margin-top: 5px;
+      font-size: 0.8em;
+    }
+
+    /* Section-specific colors */
+    .ccs-buttons .link-button img {
+      border-color: #e68a00;
+    }
+    .ccs-buttons .link-button:hover img {
+      box-shadow: 0 0 10px #e68a00;
+    }
+
+    .ccg-buttons .link-button img {
+      border-color: #36e08e;
+    }
+    .ccg-buttons .link-button:hover img {
+      box-shadow: 0 0 10px #36e08e;
+    }
+
+    .hw-buttons .link-button img {
+      border-color: #6fbdf7;
+    }
+    .hw-buttons .link-button:hover img {
+      box-shadow: 0 0 10px #6fbdf7;
+    }
+
+    .mpg-buttons .link-button img {
+      border-color: #e03c31;
+    }
+    .mpg-buttons .link-button:hover img {
+      box-shadow: 0 0 10px #e03c31;
+    }
+  </style>
 </head>
 <body>
-    <!-- Matrix Background -->
-    <div id="matrix-background"></div>
+  <div id="matrix-background"></div>
 
-    <!-- Navigation Menu -->
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="opensource.html">OpenSource</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="resume.html">References</a></li>
-        </ul>
-    </div>
+  <div id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="opensource.html">OpenSource</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="resume.html">References</a></li>
+    </ul>
+  </div>
 
-    <!-- Main Content Box -->
-    <div id="main-content">
-        <header>
-            <pre id="ascii-name">Loading ASCII art...</pre>
-        </header>
+  <div id="main-content">
+    <header>
+      <pre id="ascii-name">Loading ASCII art...</pre>
+    </header>
 
-        <!-- Client Work Section -->
-        <section class="work-section">
-            <h1>Client Work</h1>
+    <!-- Client Work Section -->
+    <section class="work-section">
+      <h1>Client Work</h1>
+      <div class="work-entry">
+        <div class="work-image">
+          <img src="assets/work/ccs_preview.png" alt="Carolina Cabinet Specialist Screenshot">
+        </div>
+        <div class="work-content">
+          <h3>Digital Content Specialist - Carolina Cabinet Specialist</h3>
+          <p>I specialize in creating engaging content that captures attention and draws in new customers...</p>
+          <div class="link-buttons ccs-buttons">
+            <a href="https://ccs.treepl.co/" class="link-button"><img src="assets/work/ccs_website.png" alt="Website"><span>Website</span></a>
+            <a href="https://www.facebook.com/CarolinaCabinetSpecialistofNorthCarolina" class="link-button"><img src="assets/work/ccs_facebook.png" alt="X"><span>Facebook</span></a>
+            <a href="https://www.instagram.com/carolinacabspec/" class="link-button"><img src="assets/work/ccs_instagram.png" alt="Gallery"><span>Instagram</span></a>
+            <a href="https://www.instagram.com/p/DHyL_8bO1UD/" class="link-button"><img src="assets/work/ccs_sample.png" alt="GitHub"><span>Sample</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="work-entry">
-                <div class="work-image">
-                    <img src="assets/work/ccs_preview.png" alt="Carolina Cabinet Specialist Screenshot">
-                </div>
-                <div class="work-content">
-                    <h3>Digital Content Specialist - Carolina Cabinet Specialist</h3>
-                    <p>I specialize in creating engaging content that captures attention and draws in new customers. By maintaining a consistent posting schedule and analyzing performance trends, I’ve helped steadily 
-                       increase reach month over month. I also prioritize clear communication and hold regular weekly meetings to ensure our strategy stays aligned and on track.</p>
-                    <div class="link-buttons">
-                        <a href="https://ccs.treepl.co/" class="link-button"><img src="assets/work/ccs_website.png" alt="Website"><span>Website</span></a>
-                        <a href="https://www.facebook.com/CarolinaCabinetSpecialistofNorthCarolina" class="link-button"><img src="assets/work/ccs_facebook.png" alt="X"><span>Facebook</span></a>
-                        <a href="https://www.instagram.com/carolinacabspec/" class="link-button"><img src="assets/work/ccs_instagram.png" alt="Gallery"><span>Instagram</span></a>
-                        <a href="https://www.instagram.com/p/DHyL_8bO1UD/" class="link-button"><img src="assets/work/ccs_sample.png" alt="GitHub"><span>Sample</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Personal Work Section -->
+    <section class="work-section">
+      <h1>Personal Work</h1>
 
-        <!-- Personal Work Section -->
-        <section class="work-section">
-            <h1>Personal Work</h1>
+      <div class="work-entry">
+        <div class="work-image">
+          <img src="assets/work/ccg_preview.png" alt="Cool Cyber Games Screenshot">
+        </div>
+        <div class="work-content">
+          <h3>Co-Founder & CEO - Cool Cyber Games</h3>
+          <p>Cool Cyber Games is an interactive learning platform that gamifies cybersecurity education...</p>
+          <div class="link-buttons ccg-buttons">
+            <a href="https://coolcybergames.com" class="link-button" target="_blank"><img src="assets/work/ccg_website.png" alt="Website"><span>Website</span></a>
+            <a href="https://github.com/matthewgoembel/CoolCyberGames" class="link-button"><img src="assets/work/ccg_github.png" alt="X"><span>Github</span></a>
+            <a href="https://anthonyclayton12.github.io/CoolCyberGames-Plan/" class="link-button"><img src="assets/work/ccg_docs.png" alt="Gallery"><span>Docs</span></a>
+            <a href="https://coolcybergames.com" class="link-button"><img src="assets/work/ccg_playnow.png" alt="GitHub"><span>Play Now!</span></a>
+          </div>
+        </div>
+      </div>
 
-            <div class="work-entry">
-                <div class="work-image">
-                    <img src="assets/work/ccg_preview.png" alt="Cool Cyber Games Screenshot">
-                </div>
-                <div class="work-content">
-                    <h3>Co-Founder & CEO - Cool Cyber Games</h3>
-                        <p>Cool Cyber Games is an interactive learning platform that gamifies cybersecurity education. We design immersive 2D, 2.5D, and 3D games that teach best practices in digital safety. Players learn how to 
-                            recognize and defend against real-world cyber threats such as phishing, malware, and insecure passwords through hands-on gameplay and scenario-based challenges.</p>                    
-                    <div class="link-buttons">
-                        <a href="https://coolcybergames.com" class="link-button" target="_blank"><img src="assets/work/ccg_website.png" alt="Website"><span>Website</span></a>
-                        <a href="https://github.com/matthewgoembel/CoolCyberGames" class="link-button"><img src="assets/work/ccg_github.png" alt="X"><span>Github</span></a>
-                        <a href="https://anthonyclayton12.github.io/CoolCyberGames-Plan/" class="link-button"><img src="assets/work/ccg_docs.png" alt="Gallery"><span>Docs</span></a>
-                        <a href="https://coolcybergames.com" class="link-button"><img src="assets/work/ccg_playnow.png" alt="GitHub"><span>Play Now!</span></a>
-                    </div>
-                </div>
-            </div>
+      <div class="work-entry">
+        <div class="work-image">
+          <img src="assets/work/hw_preview.gif" alt="Hypewave AI Screenshot">
+        </div>
+        <div class="work-content">
+          <h3>Founder & CEO - Hypewave AI</h3>
+          <p>Hypewave AI is your first true AI trading partner—built to help traders make smarter, data-driven decisions...</p>
+          <div class="link-buttons hw-buttons">
+            <a href="https://hypewave.ai" class="link-button"><img src="assets/work/hw_website.png" alt="Website"><span>Website</span></a>
+            <a href="https://x.com/hypewave_ai" class="link-button"><img src="assets/work/hw_twitter.png" alt="X"><span>X</span></a>
+            <a href="https://t.me/hypewaveai" class="link-button"><img src="assets/work/hw_telegram.png" alt="Telegram"><span>Telegram</span></a>
+            <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/hw_github.png" alt="Github"><span>Github</span></a>
+            <a href="" class="link-button"><img src="assets/work/hw_download.png" alt="GitHub"><span>Download</span></a>
+          </div>
+        </div>
+      </div>
 
-            <div class="work-entry">
-                <div class="work-image">
-                    <img src="assets/work/hw_preview.gif" alt="Hypewave AI Screenshot">
-                </div>
-                <div class="work-content">
-                    <h3>Founder & CEO - Hypewave AI</h3>
-                        <p>Hypewave AI is your first true AI trading partner—built to help traders make smarter, data-driven decisions. Unlike traditional tools, Hypewave cuts through noise and emotion, analyzing charts, sentiment, and signals in real time to 
-                           identify the opportunity before the hype. If you’re tired of trading alone or second-guessing entries, Hypewave is designed to give you clarity and confidence. Launching before 2026.</p> 
-                    <div class="link-buttons">
-                        <a href="https://hypewave.ai" class="link-button"><img src="assets/work/hw_website.png" alt="Website"><span>Website</span></a>
-                        <a href="https://x.com/hypewave_ai" class="link-button"><img src="assets/work/hw_twitter.png" alt="X"><span>X</span></a>
-                        <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/hw_github.png" alt="Github"><span>Github</span></a>
-                        <a href="" class="link-button"><img src="assets/work/hw_download.png" alt="GitHub"><span>Download</span></a>
-                    </div>
-                </div>
-            </div>
+      <div class="work-entry">
+        <div class="work-image">
+          <img src="assets/work/trading_preview.png" alt="Trading Screenshot">
+        </div>
+        <div class="work-content">
+          <h3>Independent Trader - MPG Capital</h3>
+          <p>Experienced market analyst and active trader with over 3 years in equities, futures, and crypto...</p>
+          <div class="link-buttons mpg-buttons">
+            <a href="https://hypewave.ai" class="link-button"><img src="assets/work/trading_website.png" alt="Website"><span>Website</span></a>
+            <a href="https://x.com/hypewave_ai" class="link-button"><img src="assets/work/trading_twitter.png" alt="X"><span>X</span></a>
+            <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/trading_discord.png" alt="Github"><span>Discord</span></a>
+            <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/trading_telegram.png" alt="Github"><span>Telegram</span></a>
+            <a href="assets/top_step.pdf" class="link-button"><img src="assets/work/trading_certificate.png" alt="GitHub"><span>Certificates</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="work-entry">
-                <div class="work-image">
-                    <img src="assets/work/trading_preview.png" alt="Hypewave AI Screenshot">
-                </div>
-                <div class="work-content">
-                    <h3>Independent Trader - MPG Captial</h3>
-                        <p>Experienced market analyst and active trader with over 3 years in equities, futures, and crypto. Certified funded trader with TopStep, earning over $10K in realized profits in 1 month. Specializing in high-probability day trades, 
-                            conviction-based swing plays, and early memecoin gems. Passionate about market psychology and analysis, and helping others learn and improve.</p> 
-                    <div class="link-buttons">
-                        <a href="https://hypewave.ai" class="link-button"><img src="assets/work/trading_website.png" alt="Website"><span>Website</span></a>
-                        <a href="https://x.com/hypewave_ai" class="link-button"><img src="assets/work/trading_twitter.png" alt="X"><span>X</span></a>
-                        <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/trading_discord.png" alt="Github"><span>Discord</span></a>
-                        <a href="https://github.com/matthewgoembel/Hypewave-AI-Engine" class="link-button"><img src="assets/work/trading_telegram.png" alt="Github"><span>Telegram</span></a>
-                        <a href="assets/top_step.pdf" class="link-button"><img src="assets/work/trading_certificate.png" alt="GitHub"><span>Certificates</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="social-links">
+      <a href="https://linktr.ee/matthewgoembel" target="_blank">Linktree</a>
+      <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
+    </section>
 
-        <section id="social-links">
-            <a href="https://linktr.ee/matthewgoembel" target="_blank">Linktree</a>
-            <a href="https://www.linkedin.com/in/matthewgoembel/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/matthewgoembel" target="_blank">GitHub</a>
-        </section>
+    <footer>
+      <p>&copy; 2025 MPG</p>
+    </footer>
+  </div>
 
-        <footer>
-            <p>&copy; 2025 MPG</p>
-        </footer>
-    </div>
+  <script>
+    fetch('assets/ascii-work.txt')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('ascii-name').textContent = data;
+      })
+      .catch(error => {
+        console.error('Error loading ASCII art:', error);
+      });
+  </script>
 
-    <script>
-        fetch('assets/ascii-work.txt')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('ascii-name').textContent = data;
-            })
-            .catch(error => {
-                console.error('Error loading ASCII art:', error);
-            });
-    </script>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
